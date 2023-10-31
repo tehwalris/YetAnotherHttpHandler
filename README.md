@@ -1,3 +1,8 @@
+# HACK
+
+This fork removes a `.csproj` file from `src/YetAnotherHttpHandler`. When that file is present [MSBuildForUnity](https://github.com/microsoft/MSBuildForUnity) duplicates the DLLs of this project and causes `An assembly with the same simple name 'Cysharp.Net.Http.YetAnotherHttpHandler' has already been imported.`. Removing the `.csproj` file is an ugly workraound.
+
+
 # YetAnotherHttpHandler
 YetAnotherHttpHandler brings the power of HTTP/2 to Unity and .NET Standard.
 
